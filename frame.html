@@ -1,0 +1,87 @@
+<head>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <script>
+        function load() {
+            switch (localStorage.getItem('id')) {
+                case "pogChamp":
+                    document.getElementById("view").src = './images/pogChamp.jpg';
+                    break;
+                case "pauseChamp":
+                    document.getElementById("view").src = './images/pauseChamp.png';
+                    break;
+                case "weirdChamp":
+                    document.getElementById("view").src = './images/weirdChamp.png';
+                    break;
+                case "omegalul":
+                    document.getElementById("view").src = './images/omegalul.png';
+                    break;
+                case "kappa":
+                    document.getElementById("view").src = './images/kappa.jpg';
+                    break;
+                case "kekW":
+                    document.getElementById("view").src = './images/kekW.jpg';
+                    break;
+                case "fivehead":
+                    document.getElementById("view").src = './images/5head.jpg';
+                    break;
+                case "monkaS":
+                    document.getElementById("view").src = './images/monkaS.png';
+                    break;
+                case "sadPepe":
+                    document.getElementById("view").src = './images/sadPepe.gif';
+                    break;
+                case "pepega":
+                    document.getElementById("view").src = './images/pepega.png';
+                    break;
+                case "KKomrade":
+                    document.getElementById("view").src = './images/KKomrade.png';
+                    break;
+                case "partyParrot":
+                    document.getElementById("view").src = './images/partyParrot.gif';
+                    break;
+                case "hackerman":
+                    document.getElementById("view").src = './images/hackerman.gif';
+                    break;
+                case "gachiBass":
+                    document.getElementById("view").src = './images/gachiBass.gif';
+                    break;
+            }
+        }
+    </script>
+
+    <style>
+        #close {
+            opacity: 0.7;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 12px;
+            text-decoration: none;
+            z-index: 1500;
+        }
+
+        body {
+            overflow: hidden;
+            margin: 1px;
+        }
+
+        div {
+            -webkit-app-region: drag;
+        }
+
+        a {
+            -webkit-app-region: no-drag;
+        }
+    </style>
+</head>
+
+<body onload="load()">
+    <div class="d">
+        <img id="view" class="vw-100 vh-100" src="">
+
+    </div>
+    <a id="close" href="javascript:window.close()">Close</a>
+
+</body>
