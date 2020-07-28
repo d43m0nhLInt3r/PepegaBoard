@@ -1,19 +1,70 @@
 {
-  "name": "PepegaBoard",
+  "name": "pepegaboard",
   "version": "1.0.0",
   "description": "An Open Source Pepega Board",
   "main": "main.js",
-  "repository": "gituwu.com",
-  "author": "d43m0nhLInt3r",
+  "repository": "https://github.com/d43m0nhLInt3r/PepegaBoard",
+  "author": {"name": "d43m0nhLInt3r", "email": "lookat@my.repo" },
   "license": "GPL-3.0",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build-deb-64": "electron-builder -l deb --x64 ",
+    "build-win-64": "electron-builder -w nsis --x64 ",
+    "build-mac-64": "electron-builder -m --x64 ",
+    "build-arch-pac": "electron-builder -l pacman --x64 ",
+    "build-linux-appimage": "electron-builder -l appimage --x64 "
   },
   "devDependencies": {
-    "electron": "^9.1.1"
+    "electron": "^9.1.1",
+    "electron-builder": "^22.8.0"
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
+    "electron-icon-maker": "^0.0.4",
     "jquery": "^3.5.1"
+  },
+  "release": "build",
+  "build": {
+    "appId": "com.pepegaboard.app",
+    "asar": true,
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "d43m0nhLInt3r",
+        "repo": "PepegaBoard"
+      }
+    ],
+    "mac": {
+      "artifactName": "${name}-mac-${version}.${ext}",
+      "category": "public.app-category.utilities",
+      "darkModeSupport": true,
+      "icon": "build/icons/mac/icon.icns",
+      "target": [
+        "zip"
+      ]
+    },
+    "win": {
+      "artifactName": "${name}-win-${version}.${ext}",
+      "publisherName": "d43m0nhLInt3r",
+      "icon": "build/icons/win/icon.ico",
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "deleteAppDataOnUninstall": true,
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false,
+      "perMachine": false
+    },
+    "linux": {
+      "artifactName": "${name}-linux-${version}.${ext}",
+      "category": "Utility",
+      "target": [
+        "deb",
+        "pac"
+      ],
+      "icon": "build/icons/png"
+    }
   }
 }
