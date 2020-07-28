@@ -4,15 +4,19 @@
   "description": "An Open Source Pepega Board",
   "main": "main.js",
   "repository": "https://github.com/d43m0nhLInt3r/PepegaBoard",
-  "author": {"name": "d43m0nhLInt3r", "email": "lookat@my.repo" },
+  "author": {
+    "name": "d43m0nhLInt3r",
+    "email": "lookat@my.repo"
+  },
   "license": "GPL-3.0",
   "scripts": {
     "start": "electron .",
-    "build-deb-64": "electron-builder -l deb --x64 ",
-    "build-win-64": "electron-builder -w nsis --x64 ",
-    "build-mac-64": "electron-builder -m --x64 ",
+    "build-deb": "electron-builder -l deb --x64 ",
+    "build-win": "electron-builder -w nsis --x64 ",
+    "build-mac": "electron-builder -m --x64 ",
     "build-arch-pac": "electron-builder -l pacman --x64 ",
-    "build-linux-appimage": "electron-builder -l appimage --x64 "
+    "build-linux-appimage": "electron-builder -l appimage --x64 ",
+    "build-all": "yarn run build-deb && yarn run build-win && yarn run build-mac && yarn run build-arch-pac && yarn run build-linux-appimage"
   },
   "devDependencies": {
     "electron": "^9.1.1",
@@ -20,7 +24,6 @@
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
-    "electron-icon-maker": "^0.0.4",
     "jquery": "^3.5.1"
   },
   "release": "build",
