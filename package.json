@@ -1,0 +1,19 @@
+{
+  "name": "PepegaBoard",
+  "version": "1.0.0",
+  "description": "An Open Source Pepega Board",
+  "main": "main.js",
+  "repository": "gituwu.com",
+  "author": "d43m0nhLInt3r",
+  "license": "GPL-3.0",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^9.1.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1"
+  }
+}
