@@ -93,48 +93,52 @@ document.getElementById("sadPepe").addEventListener("click", (event) => {
   win.show();
 });
 document.getElementById("pepega").addEventListener("click", (event) => {
-    localStorage.setItem("id", "pepega");
-    const modalPath = path.join("file://", __dirname, "frame.html");
-    let win = new BrowserWindow({ frame: false, width: 256, height: 256 });
-    win.on("close", () => {
-      win = null;
-    });
-    win.loadURL(modalPath);
-    win.show();
-  });document.getElementById("KKomrade").addEventListener("click", (event) => {
-    localStorage.setItem("id", "KKomrade");
-    const modalPath = path.join("file://", __dirname, "frame.html");
-    let win = new BrowserWindow({ frame: false, width: 256, height: 256 });
-    win.on("close", () => {
-      win = null;
-    });
-    win.loadURL(modalPath);
-    win.show();
-  });document.getElementById("partyParrot").addEventListener("click", (event) => {
-    localStorage.setItem("id", "partyParrot");
-    const modalPath = path.join("file://", __dirname, "frame.html");
-    let win = new BrowserWindow({ frame: false, width: 256, height: 256 });
-    win.on("close", () => {
-      win = null;
-    });
-    win.loadURL(modalPath);
-    win.show();
-  });document.getElementById("partyParrot").addEventListener("click", (event) => {
-    localStorage.setItem("id", "partyParrot");
-    const modalPath = path.join("file://", __dirname, "frame.html");
-    let win = new BrowserWindow({ frame: false, width: 256, height: 256 });
-    win.on("close", () => {
-      win = null;
-    });
-    win.loadURL(modalPath);
-    win.show();
-  });document.getElementById("gachiBass").addEventListener("click", (event) => {
-    localStorage.setItem("id", "gachiBass");
-    const modalPath = path.join("file://", __dirname, "frame.html");
-    let win = new BrowserWindow({ frame: false, width: 256, height: 256 });
-    win.on("close", () => {
-      win = null;
-    });
-    win.loadURL(modalPath);
-    win.show();
+  localStorage.setItem("id", "pepega");
+  const modalPath = path.join("file://", __dirname, "frame.html");
+  let win = new BrowserWindow({ frame: false, width: 256, height: 256 });
+  win.on("close", () => {
+    win = null;
   });
+  win.loadURL(modalPath);
+  win.show();
+});
+document.getElementById("KKomrade").addEventListener("click", (event) => {
+  localStorage.setItem("id", "KKomrade");
+  const modalPath = path.join("file://", __dirname, "frame.html");
+  let win = new BrowserWindow({ frame: false, width: 256, height: 256 });
+  win.on("close", () => {
+    win = null;
+  });
+  win.loadURL(modalPath);
+  win.show();
+});
+document.getElementById("partyParrot").addEventListener("click", (event) => {
+  localStorage.setItem("id", "partyParrot");
+  const modalPath = path.join("file://", __dirname, "frame.html");
+  let win = new BrowserWindow({ frame: false, width: 256, height: 256 });
+  win.on("close", () => {
+    win = null;
+  });
+  win.loadURL(modalPath);
+  win.show();
+});
+document.getElementById("hackerman").addEventListener("click", (event) => {
+  localStorage.setItem("id", "hackerman");
+  const modalPath = path.join("file://", __dirname, "frame.html");
+  let win = new BrowserWindow({ frame: false, width: 256, height: 256 });
+  win.on("close", () => {
+    win = null;
+  });
+  win.loadURL(modalPath);
+  win.show();
+});
+document.getElementById("gachiBass").addEventListener("click", (event) => {
+  localStorage.setItem("id", "gachiBass");
+  const modalPath = path.join("file://", __dirname, "frame.html");
+  let win = new BrowserWindow({ frame: false, width: 256, height: 256 });
+  win.on("close", () => {
+    win = null;
+  });
+  win.loadURL(modalPath);
+  win.show();
+});
