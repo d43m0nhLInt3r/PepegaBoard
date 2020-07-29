@@ -5,7 +5,7 @@ const path = require("path");
 document.getElementById("pogChamp").addEventListener("click", (event) => {
   localStorage.setItem("id", "pogChamp");
   const modalPath = path.join("file://", __dirname, "frame.html");
-  let win = new BrowserWindow({ frame: false, width: 256, height: 256 });
+  let win = new BrowserWindow({ frame: false, width: 256, height: 256, alwaysOnTop: true });
   win.on("close", () => {
     win = null;
   });
