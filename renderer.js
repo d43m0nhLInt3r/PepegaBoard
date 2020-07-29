@@ -15,7 +15,7 @@ document.getElementById("pogChamp").addEventListener("click", (event) => {
 document.getElementById("pauseChamp").addEventListener("click", (event) => {
   localStorage.setItem("id", "pauseChamp");
   const modalPath = path.join("file://", __dirname, "frame.html");
-  let win = new BrowserWindow({ frame: false, width: 256, height: 256 });
+  let win = new BrowserWindow({ frame: false, width: 256, height: 256, alwaysOnTop: true });
   win.on("close", () => {
     win = null;
   });
@@ -25,7 +25,7 @@ document.getElementById("pauseChamp").addEventListener("click", (event) => {
 document.getElementById("weirdChamp").addEventListener("click", (event) => {
   localStorage.setItem("id", "weirdChamp");
   const modalPath = path.join("file://", __dirname, "frame.html");
-  let win = new BrowserWindow({ frame: false, width: 256, height: 256 });
+  let win = new BrowserWindow({ frame: false, width: 256, height: 256, alwaysOnTop: true });
   win.on("close", () => {
     win = null;
   });
@@ -35,7 +35,7 @@ document.getElementById("weirdChamp").addEventListener("click", (event) => {
 document.getElementById("omegalul").addEventListener("click", (event) => {
   localStorage.setItem("id", "omegalul");
   const modalPath = path.join("file://", __dirname, "frame.html");
-  let win = new BrowserWindow({ frame: false, width: 256, height: 256 });
+  let win = new BrowserWindow({ frame: false, width: 256, height: 256, alwaysOnTop: true });
   win.on("close", () => {
     win = null;
   });
@@ -45,7 +45,7 @@ document.getElementById("omegalul").addEventListener("click", (event) => {
 document.getElementById("kappa").addEventListener("click", (event) => {
   localStorage.setItem("id", "kappa");
   const modalPath = path.join("file://", __dirname, "frame.html");
-  let win = new BrowserWindow({ frame: false, width: 256, height: 256 });
+  let win = new BrowserWindow({ frame: false, width: 256, height: 256, alwaysOnTop: true });
   win.on("close", () => {
     win = null;
   });
@@ -55,7 +55,7 @@ document.getElementById("kappa").addEventListener("click", (event) => {
 document.getElementById("kekW").addEventListener("click", (event) => {
   localStorage.setItem("id", "kekW");
   const modalPath = path.join("file://", __dirname, "frame.html");
-  let win = new BrowserWindow({ frame: false, width: 256, height: 256 });
+  let win = new BrowserWindow({ frame: false, width: 256, height: 256, alwaysOnTop: true });
   win.on("close", () => {
     win = null;
   });
@@ -65,7 +65,7 @@ document.getElementById("kekW").addEventListener("click", (event) => {
 document.getElementById("5head").addEventListener("click", (event) => {
   localStorage.setItem("id", "fivehead");
   const modalPath = path.join("file://", __dirname, "frame.html");
-  let win = new BrowserWindow({ frame: false, width: 256, height: 256 });
+  let win = new BrowserWindow({ frame: false, width: 256, height: 256, alwaysOnTop: true });
   win.on("close", () => {
     win = null;
   });
@@ -75,7 +75,7 @@ document.getElementById("5head").addEventListener("click", (event) => {
 document.getElementById("monkaS").addEventListener("click", (event) => {
   localStorage.setItem("id", "monkaS");
   const modalPath = path.join("file://", __dirname, "frame.html");
-  let win = new BrowserWindow({ frame: false, width: 256, height: 256 });
+  let win = new BrowserWindow({ frame: false, width: 256, height: 256, alwaysOnTop: true });
   win.on("close", () => {
     win = null;
   });
@@ -85,7 +85,7 @@ document.getElementById("monkaS").addEventListener("click", (event) => {
 document.getElementById("sadPepe").addEventListener("click", (event) => {
   localStorage.setItem("id", "sadPepe");
   const modalPath = path.join("file://", __dirname, "frame.html");
-  let win = new BrowserWindow({ frame: false, width: 256, height: 256 });
+  let win = new BrowserWindow({ frame: false, width: 256, height: 256, alwaysOnTop: true });
   win.on("close", () => {
     win = null;
   });
@@ -95,7 +95,7 @@ document.getElementById("sadPepe").addEventListener("click", (event) => {
 document.getElementById("pepega").addEventListener("click", (event) => {
   localStorage.setItem("id", "pepega");
   const modalPath = path.join("file://", __dirname, "frame.html");
-  let win = new BrowserWindow({ frame: false, width: 256, height: 256 });
+  let win = new BrowserWindow({ frame: false, width: 256, height: 256, alwaysOnTop: true });
   win.on("close", () => {
     win = null;
   });
@@ -105,7 +105,7 @@ document.getElementById("pepega").addEventListener("click", (event) => {
 document.getElementById("KKomrade").addEventListener("click", (event) => {
   localStorage.setItem("id", "KKomrade");
   const modalPath = path.join("file://", __dirname, "frame.html");
-  let win = new BrowserWindow({ frame: false, width: 256, height: 256 });
+  let win = new BrowserWindow({ frame: false, width: 256, height: 256, alwaysOnTop: true });
   win.on("close", () => {
     win = null;
   });
@@ -115,7 +115,7 @@ document.getElementById("KKomrade").addEventListener("click", (event) => {
 document.getElementById("partyParrot").addEventListener("click", (event) => {
   localStorage.setItem("id", "partyParrot");
   const modalPath = path.join("file://", __dirname, "frame.html");
-  let win = new BrowserWindow({ frame: false, width: 256, height: 256 });
+  let win = new BrowserWindow({ frame: false, width: 256, height: 256, alwaysOnTop: true });
   win.on("close", () => {
     win = null;
   });
@@ -125,7 +125,7 @@ document.getElementById("partyParrot").addEventListener("click", (event) => {
 document.getElementById("hackerman").addEventListener("click", (event) => {
   localStorage.setItem("id", "hackerman");
   const modalPath = path.join("file://", __dirname, "frame.html");
-  let win = new BrowserWindow({ frame: false, width: 256, height: 256 });
+  let win = new BrowserWindow({ frame: false, width: 256, height: 256, alwaysOnTop: true });
   win.on("close", () => {
     win = null;
   });
@@ -135,7 +135,17 @@ document.getElementById("hackerman").addEventListener("click", (event) => {
 document.getElementById("gachiBass").addEventListener("click", (event) => {
   localStorage.setItem("id", "gachiBass");
   const modalPath = path.join("file://", __dirname, "frame.html");
-  let win = new BrowserWindow({ frame: false, width: 256, height: 256 });
+  let win = new BrowserWindow({ frame: false, width: 256, height: 256, alwaysOnTop: true });
+  win.on("close", () => {
+    win = null;
+  });
+  win.loadURL(modalPath);
+  win.show();
+});
+document.getElementById("KEKW").addEventListener("click", (event) => {
+  localStorage.setItem("id", "KEKW");
+  const modalPath = path.join("file://", __dirname, "audio.html");
+  let win = new BrowserWindow({ frame: false, width: 256, height: 256, alwaysOnTop: true });
   win.on("close", () => {
     win = null;
   });
