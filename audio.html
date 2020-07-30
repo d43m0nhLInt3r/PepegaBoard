@@ -1,0 +1,66 @@
+<head>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <script>
+        function load() {
+            switch (localStorage.getItem('id')) {
+                case "KEKW":
+                    document.getElementById("play").src = './audio/KEKW.mp3';
+                    document.getElementById("view").src = './images/kekW.jpg';
+                    break;
+                }
+        }
+    </script>
+
+    <style>
+        .close {
+            opacity: 0.7;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 12px;
+            text-decoration: none;
+            z-index: 1500;
+        }
+
+        .play {
+            opacity: 0.7;
+            position: absolute;
+            bottom: 40vh;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 12px;
+            text-decoration: none;
+            z-index: 1501;
+        }
+
+        body {
+            overflow: hidden;
+            margin: 1px;
+        }
+
+        div {
+            -webkit-app-region: drag;
+        }
+
+        a {
+            -webkit-app-region: no-drag;
+        }
+    </style>
+</head>
+
+<body onload="load()">
+    <audio id="play">
+        <source src="" type="audio/mp3" />
+    </audio>
+    <div class="d">
+        <img id="view" class="vw-100 vh-100" src="" >
+        <a onClick="document.getElementById('play').play(); return false;" href="javascript:window.close()">
+        <img class="play" style="height: 64px; width: 64px;" src="./images/play.png" >
+    </a>
+    </div>
+
+    <a class="close" href="javascript:window.close()">Close</a>
+
+</body>
