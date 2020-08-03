@@ -21,7 +21,6 @@
             transform: translateX(-50%);
             font-size: 12px;
             text-decoration: none;
-            z-index: 1499;
         }
 
         .play {
@@ -32,7 +31,6 @@
             transform: translateX(-50%);
             font-size: 12px;
             text-decoration: none;
-            z-index: 1500;
         }
 
         body {
@@ -48,9 +46,6 @@
             -webkit-app-region: no-drag;
         }
 
-        #view {
-            z-index: 1400;
-        }
     </style>
 </head>
 
@@ -60,7 +55,7 @@
     </audio>
     <div class="d">
         <img id="view" class="vw-100 vh-100" src="" >
-        <a class="play" onClick="document.getElementById('play').play(); return false;" style="z-index: 1500; -webkit-app-region: no-drag;" href="">
+        <a class="play"  href="javascript:document.getElementById('play').play()">
         <img style="height: 64px; width: 64px;" src="./images/play.png" >
     </a>
     </div>
