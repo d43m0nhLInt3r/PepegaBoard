@@ -1,6 +1,7 @@
 {
   "name": "pepegaboard",
-  "version": "1.1.0",
+  "productName": "PepegaBoard",
+  "version": "1.2.0",
   "description": "An Open Source Pepega Board",
   "main": "main.js",
   "repository": "https://github.com/d43m0nhLInt3r/PepegaBoard",
@@ -19,7 +20,7 @@
     "build-all": "yarn run build-deb && yarn run build-win && yarn run build-mac && yarn run build-arch-pac && yarn run build-linux-appimage"
   },
   "devDependencies": {
-    "electron": "^9.1.1",
+    "electron": "^9.1.2",
     "electron-builder": "^22.8.0"
   },
   "dependencies": {
