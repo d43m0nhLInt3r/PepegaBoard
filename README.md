@@ -1,6 +1,7 @@
 # PepegaBoard
 An Open Source Pepega Board
-<img src="https://github.com/d43m0nhLInt3r/PepegaBoard/raw/master/images/PepegaBoard.png">
+<br><img src="https://github.com/d43m0nhLInt3r/PepegaBoard/raw/master/images/PepegaBoard.png" width="400px">
+<img src="https://github.com/d43m0nhLInt3r/PepegaBoard/raw/master/images/PepegaBoard2.png" width="400px">
 ## How to add an image
 index.html
 ```bash
