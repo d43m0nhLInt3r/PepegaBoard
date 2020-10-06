@@ -20,7 +20,7 @@
     "build-all": "yarn run build-deb && yarn run build-win && yarn run build-mac && yarn run build-arch-pac && yarn run build-linux-appimage"
   },
   "devDependencies": {
-    "electron": "^9.1.2",
+    "electron": "^9.3.0",
     "electron-builder": "^22.8.0"
   },
   "dependencies": {
